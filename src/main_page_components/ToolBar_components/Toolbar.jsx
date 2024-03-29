@@ -1,5 +1,6 @@
 import './ToolBar-dark.css'
-import logo from '../../assets/logo.png'
+import logo from '../../../public/SuperiorTasker.png'
+import profilePic from '../../assets/logo.png'
 import { Link } from 'react-router-dom';
 
 function ToolBarComponent_MainPage(){
@@ -23,7 +24,7 @@ function ToolBarComponent_MainPage(){
                             </Link>
                         </div>
                     </div>
-                    <img src={logo} alt='LOGO' className='small-logo' />
+                    <img src={profilePic} alt='LOGO' className='small-logo' />
                     <h1 className='Ime-Prezime'>Ime Prezime</h1>
                 </div>
 

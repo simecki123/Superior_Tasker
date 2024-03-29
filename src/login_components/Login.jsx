@@ -1,5 +1,5 @@
 import './Login-dark.css'
-import logo from '../assets/logo.png'
+import logo from '../../public/SuperiorTasker.png'
 import { Link } from 'react-router-dom';
 
 function LoginScreen() {
