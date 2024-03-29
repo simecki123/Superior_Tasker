@@ -1,0 +1,50 @@
+
+.Profile-component {
+    left: 0;
+    background-color: #333; /* Dark background color */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.big-logo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.big-Name-surname {
+    font-size: 1.5em;
+    color: #fff; /* White text color */
+}
+
+.profile-description {
+    font-size: 1.2em;
+    color: #ccc; /* Lighter text color */
+}
+
+p {
+    color: #aaa; /* Even lighter text color */
+}
+
+button {
+    background-color: #3498db; /* Blue button color */
+    color: #fff; /* White text color */
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue color on hover */
+}
+
+
+.vertical-line {
+    height: 100%;
+    width: 1px;
+    background-color: #f3f0f0; 
+    margin-left: 20px; 
+  }

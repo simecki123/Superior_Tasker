@@ -1,0 +1,55 @@
+.toDoList {
+    
+    background-color: #fff; /* Dark background color */
+    color: #333; /* Text color */
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .toDoList h1 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  
+  .toDoList ol {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .toDoList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: #fff; /* Darker list item background color */
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .checkbox{
+    height: 30px;
+    width: 40px;
+  }
+  
+  .toDoList .text {
+    width: 70%; /* Adjust as needed */
+  }
+  
+  .toDoList .delete-button,
+  .toDoList .move-button {
+    background-color: #53df5f; /* Red button color */
+    color: #333; /* Text color */
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toDoList .delete-button:hover,
+  .toDoList .move-button:hover {
+    background-color: #1eb314; /* Darker red color on hover */
+  }
+  
+

@@ -1,0 +1,59 @@
+.edit-profile-screen {
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.picture-dropzone {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.picture-dropzone input {
+    display: none;
+}
+
+.user-info {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.user-info h2 {
+    margin-bottom: 5px;
+}
+
+.user-input {
+    width: 200px; /* Adjust width as needed */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.title{
+    color: #fff;
+}
+
+.save-btn {
+    background-color: #3498db; /* Blue button color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.save-btn:hover {
+
+    background-color: #2980b9; /* Darker blue color on hover */
+}

@@ -1,0 +1,26 @@
+
+.desc-screen {
+    left: 0;
+    background-color: #fff; /* Dark background color */
+    padding: 20px;
+}
+
+h2{
+    color: #333;
+    font-size: 1.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    color: #333;
+    background-color: #c8c8c8;
+    width: 150px;
+}
+
+textarea{
+    color: #333;
+    background-color: #c8c8c8;
+    max-width: 700px;
+    max-height: 600px;
+    resize: none;
+}

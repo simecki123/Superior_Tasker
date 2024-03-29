@@ -1,0 +1,35 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Set height of main page to full viewport height */
+    background-color: #fff; /* Dark background color */
+}
+
+.tool-bar {
+    flex: none; /* Ensure tool bar doesn't grow or shrink */
+}
+
+.main-part {
+    display: flex;
+    flex: 1; /* Grow main part to take remaining space */
+}
+
+.project-desc {
+    width: 25%; /* Set width to 25% of the screen */
+    height: 100%; /* Take full height of the main-part container */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+    padding: 20px; /* Add padding */
+    
+}
+
+.add-new-task {
+    flex: 1; /* Take remaining space */
+    height: 100%; /* Take full height of the main-part container */
+    padding-left: 20px; /* Add spacing between project description and add new task */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+    
+}
+
+.bottom-bar {
+    flex: none; /* Ensure bottom bar doesn't grow or shrink */
+}

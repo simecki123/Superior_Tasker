@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    margin: 0;
+  }
+  
+
+  
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-container {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .searchForm {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+  }
+  
+  .search-bar {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 1.4rem;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .submit-button {
+    font-size: 1.4rem;
+    background-color: #2196f3;
+    width: 60px;
+    height: 50px;
+  }
+  
+  .submit-button:hover {
+    background-color: #0b6ab7;
+  }
+  
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content span {
+    width: 200px;
+    height: 50px;
+    display: block;
+    padding: 8px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-btn {
+    width: 200px;
+    height: 50px;
+    background-color: #2196f3;
+    margin-right: 50px;
+  }
+  
+  .dropdown-btn:hover {
+    background-color: #0b6ab7;
+  }
+
+  span:hover{
+    background-color: #626262;
+  }
+  
+  
+  .create-new-project {
+    background-color: #2196f3;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .create-new-project:hover {
+    background-color: #0b6ab7;
+  }
+  
+  hr {
+    border: 1px solid #555;
+    margin: 10px 0;
+  }
+  
+  ol {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .delete-button,
+  .move-button {
+    height: 50px;
+    width: 100px;
+    background-color: #2196f3;
+    margin-right: 10px;
+  }
+  
+  .delete-button:hover,
+  .move-button:hover {
+    background-color: #0b6ab7;
+  }
+  

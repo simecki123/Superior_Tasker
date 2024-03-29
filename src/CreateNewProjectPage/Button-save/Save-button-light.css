@@ -1,0 +1,22 @@
+body {
+    background-color: #fff;
+}
+
+.save-all {
+    background-color: #fff;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    
+}
+
+.save-btn {
+    background-color: #40ec5a;
+    color: #333f;
+    height: 60px;
+    width: 200px;
+}
+
+.save-btn:hover {
+    background-color: #06762b;
+}

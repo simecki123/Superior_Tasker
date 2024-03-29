@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.search-container {
+  flex-grow: 1;
+  margin-right: 10px;
+  
+
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.search-bar{
+    width: 100%;
+    background-color: white;
+    color: #333;
+    padding: 10px;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  
+  
+}
+
+.submit-button{
+  font-size: 1.4rem;
+  background-color: #4caf50;
+  width: 60px;
+  height: 50px;
+}
+.submit-button:hover{
+  background-color: #18631b;
+}
+
+
+
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content span {
+  width: 200px;
+  height: 50px;
+  display: block;
+  padding: 8px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+.dropdown-btn {
+  width: 200px;
+  height: 50px;
+  background-color: #4caf50;
+  margin-right: 50px;
+}
+.dropdown-btn:hover{
+  background-color: #18631b;
+}
+
+span:hover{
+  background-color: #ccc;
+}
+
+.create-new-project {
+  background-color: #4caf50;
+  width: 200px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.create-new-project:hover{
+  background-color: #18631b;
+}
+
+hr {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+ol {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.delete-button,
+.move-button {
+    height: 50px;
+    width: 100px;
+    background-color: #4caf50;
+    margin-right: 10px;
+
+}
+
+

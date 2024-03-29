@@ -1,0 +1,35 @@
+/* Adjustments for MainPageScreen component */
+.main-page {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  .main-part {
+    display: flex;
+    flex: 1; /* Take remaining space */
+  }
+  
+  .profile-part {
+    width: 25%;
+    margin-right: 10px;
+  }
+  
+  /* Adjustments for ProfileScreen component */
+  .Profile-component {
+    height: 100%; /* Ensure it takes full height of the parent */
+    
+  }
+  
+  /* Adjustments for ListOfProjectsScreen component */
+  .project-part {
+    width: 74%; /* Set fixed width for the List of Projects component */
+  position: absolute; /* Make it fixed */
+  top: -60; /* Adjust as needed */
+  right: 0; /* Align to the right */
+  height: 100%; /* Take full height of the viewport */
+  overflow-y: auto; /* Allow scrolling if content exceeds viewport height */
+  }
+  
+
+  
