@@ -12,6 +12,7 @@ function ListOfProjectsScreen() {
     {"id": "4","userId": "1", "title": "Clean room", "description": "Clean your room dude", "date": "03-04-2024", "completion": "80%"}
   ]);
 
+  
   // For setting search term.
   const [searchTerm, setSearchTerm] = useState('');
 

@@ -4,6 +4,14 @@ import profilePic from '../../assets/logo.png'
 import { Link } from 'react-router-dom';
 
 function ToolBarComponent_MainPage(){
+    const user = {"id": "1",
+                "firstName": "Sime",
+                "lastName": "Roncevic",
+                "email": "sroncevic19@gmail.com",
+                "password": "KKZadar1945",
+                "img": profilePic,
+                "description": "Basic user"};
+
     return(
         <>
             <div className='toolbar'>
@@ -24,8 +32,8 @@ function ToolBarComponent_MainPage(){
                             </Link>
                         </div>
                     </div>
-                    <img src={profilePic} alt='LOGO' className='small-logo' />
-                    <h1 className='Ime-Prezime'>Ime Prezime</h1>
+                    <img src={user.img} alt='LOGO' className='small-logo' />
+                    <h1 className='Ime-Prezime'>{user.firstName + " " + user.lastName}</h1>
                 </div>
 
                 <div className="right-section">

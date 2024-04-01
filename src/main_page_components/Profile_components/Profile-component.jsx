@@ -3,16 +3,21 @@ import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 
 function ProfileScreen(){
+    const user = {"id": "1",
+                "firstName": "Sime",
+                "lastName": "Roncevic",
+                "email": "sroncevic19@gmail.com",
+                "password": "KKZadar1945",
+                "img": logo,
+                "description": "Basic user"};
+
     return(
         
             <div className="Profile-component">
-                <img src={logo} alt='LOGO' className='big-logo' />
-                <h1 className='big-Name-surname'>Ime Prezime</h1>
+                <img src={user.img} alt='LOGO' className='big-logo' />
+                <h1 className='big-Name-surname'>{user.firstName + " "+ user.lastName}</h1>
                 <h3 className='profile-description'>Description</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam.
-                    </p>
+                <p>{user.description}</p>
                 <Link to={"/editprofile"}>
                     <button>EDIT PROFILE</button>
                 </Link>
