@@ -6,7 +6,7 @@ function ProfileScreen(){
     const user = {"id": "1",
                 "firstName": "Sime",
                 "lastName": "Roncevic",
-                "email": "sroncevic19@gmail.com",
+                "email": "nekimail36@gmail.com",
                 "password": "MaliPederi123",
                 "img": logo,
                 "description": "Basic user"};
