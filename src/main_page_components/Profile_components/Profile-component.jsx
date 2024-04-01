@@ -7,7 +7,7 @@ function ProfileScreen(){
                 "firstName": "Sime",
                 "lastName": "Roncevic",
                 "email": "sroncevic19@gmail.com",
-                "password": "KKZadar1945",
+                "password": "MaliPederi123",
                 "img": logo,
                 "description": "Basic user"};
 
