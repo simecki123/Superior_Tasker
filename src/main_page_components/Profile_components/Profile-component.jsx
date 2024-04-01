@@ -11,7 +11,8 @@ function ProfileScreen(){
                 <h3 className='profile-description'>Description</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam.</p>
+                    Ut enim ad minim veniam.
+                    </p>
                 <Link to={"/editprofile"}>
                     <button>EDIT PROFILE</button>
                 </Link>

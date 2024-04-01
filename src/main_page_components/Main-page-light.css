@@ -22,8 +22,9 @@
   }
   
   /* Adjustments for ListOfProjectsScreen component */
-  .project-part {
-    width: 74%; /* Set fixed width for the List of Projects component */
+  .listOfProjects {
+    height: 100%;
+  width: 74%; /* Set fixed width for the List of Projects component */
   position: absolute; /* Make it fixed */
   top: -60; /* Adjust as needed */
   right: 0; /* Align to the right */

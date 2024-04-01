@@ -16,6 +16,9 @@ function EditProfileScreen() {
                 <h2 className='title'>Surname:</h2>
                 <input className="user-input" placeholder="Enter your surname..." />
 
+                <h2 className='title'>Description:</h2>
+                <textarea className='description' placeholder='Enter description' ></textarea>
+
                 
             </div>
             <Link to={"/mainpage"}>

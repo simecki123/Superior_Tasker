@@ -58,3 +58,15 @@
 .save-btn:hover {
     background-color: #45a049; /* Darker green color on hover */
 }
+
+.description {
+    color: #333;
+    background-color: #fff;
+    height: 100px;
+    width: 200px; /* Adjust width as needed */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}

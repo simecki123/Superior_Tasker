@@ -14,7 +14,7 @@ function MainPageScreen() {
           <div className='profile-part'>
               <ProfileScreen></ProfileScreen>
           </div>
-          <div> 
+          <div className='listOfProjects'> 
               <ListOfProjectsScreen></ListOfProjectsScreen>
           </div>
         </div>

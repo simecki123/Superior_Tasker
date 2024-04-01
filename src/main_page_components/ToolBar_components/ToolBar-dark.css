@@ -28,7 +28,7 @@
   }
   
   .dropdown-content span {
-    width: 100px;
+    width: 100px !important;
     height: 200px;
     display: block;
     padding: 8px;
@@ -37,8 +37,10 @@
     cursor: pointer;
   }
 
+
   span:hover{
     background-color: #626262;
+    
   }
 
 .hamburger-btn {
