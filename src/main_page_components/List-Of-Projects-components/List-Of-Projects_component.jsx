@@ -1,18 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react'; // Import useState hook
 import './List-Of-Projects-dark.css';
+import PropTypes from 'prop-types'; // Import PropTypes for prop validation
 
-function ListOfProjectsScreen() {
-
-  // List of project that this user has
-  const [projectlist, setProjectList] = useState([
-    {"id": "1","userId": "1", "title": "Go to school", "description": "Go to school dude!", "date": "01-04-2024", "completion": "0%"},
-    {"id": "2","userId": "1", "title": "Do your homework", "description": "Homework nooo!", "date": "04-04-2024", "completion": "20%"},
-    {"id": "3","userId": "1", "title": "Excercise", "description": "Gym yea buddy", "date": "02-04-2024", "completion": "50%"},
-    {"id": "4","userId": "1", "title": "Clean room", "description": "Clean your room dude", "date": "03-04-2024", "completion": "80%"}
-  ]);
-
-  
+function ListOfProjectsScreen({ projectlist, setProjectList }) {
   // For setting search term.
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -72,60 +63,62 @@ function ListOfProjectsScreen() {
   };
 
   return (
-    <>
-      <div className='project-part'>
-        <div className="topnav">
-          <div className="search-container">
-            <form className='searchForm' onSubmit={handleSearch}>
-              <input className='search-bar' type="text" placeholder="Search.." name="search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-              <button className='submit-button' type="submit">
-                <i className="fa fa-search">🔍</i>
-              </button>
-            </form>
-          </div>
-
-          <div className="dropdown">
-            <button className="dropdown-btn">
-              Search By <i className="fa fa-caret-down"></i>
+    <div className='project-part'>
+      <div className="topnav">
+        <div className="search-container">
+          <form className='searchForm' onSubmit={handleSearch}>
+            <input className='search-bar' type="text" placeholder="Search.." name="search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+            <button className='submit-button' type="submit">
+              <i className="fa fa-search">🔍</i>
             </button>
-            <div className="dropdown-content">
-              <span onClick={sortAlphabetically}>
-                Alphabetical
-              </span>
-              <span onClick={sortByDate}>Date</span>
-              <span onClick={sortByCompletion}>
-                Completion
-              </span>
-            </div>
+          </form>
+        </div>
+
+        <div className="dropdown">
+          <button className="dropdown-btn">
+            Search By <i className="fa fa-caret-down"></i>
+          </button>
+          <div className="dropdown-content">
+            <span onClick={sortAlphabetically}>
+              Alphabetical
+            </span>
+            <span onClick={sortByDate}>Date</span>
+            <span onClick={sortByCompletion}>
+              Completion
+            </span>
           </div>
-
-          <Link to={"/newproject"}>
-            <button className="create-new-project">New Project</button>
-          </Link>
         </div>
-        <hr />
 
-        <div>
-          <ol>
-            {projectlist.map(project => (
-              <li key={project.id}>
-                <Link to={"/projectdetails"}>
-                  <span className="text">{project.title}</span>
-                  <span className='completion'>{project.completion}</span>
-                  
-                </Link>
-                <div>
-                  <button className="delete-button" onClick={() => deleteProject(project.id)}>Delete</button>
-                  <button className="move-button" onClick={() => moveProjectUp(project.id)}>☝</button>
-                  <button className="move-button" onClick={() => moveProjectDown(project.id)}>👇</button>
-                </div>
-              </li>
-            ))}
-          </ol>
-        </div>
+        <Link to={"/newproject"}>
+          <button className="create-new-project">New Project</button>
+        </Link>
       </div>
-    </>
+      <hr />
+
+      <div>
+        <ol>
+          {projectlist.map(project => (
+            <li key={project.id}>
+              <Link to={"/projectdetails"}>
+                <span className="text">{project.title}</span>
+                <span className='completion'>{project.completion}</span>
+              </Link>
+              <div>
+                <button className="delete-button" onClick={() => deleteProject(project.id)}>Delete</button>
+                <button className="move-button" onClick={() => moveProjectUp(project.id)}>☝</button>
+                <button className="move-button" onClick={() => moveProjectDown(project.id)}>👇</button>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
   );
 }
+
+ListOfProjectsScreen.propTypes = {
+  projectlist: PropTypes.array.isRequired, // Validate projectlist prop as an array and required
+  setProjectList: PropTypes.func.isRequired, // Validate setProjectList prop as a function and required
+};
 
 export default ListOfProjectsScreen;
