@@ -14,19 +14,19 @@
     margin-bottom: 20px;
   }
   
-  .logo {
+  .login-logo {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     margin-right: 10px;
   }
   
-  h1 {
+.login-title {
     font-size: 1.5em;
     color: #333;
   }
   
-  form {
+.login-form {
     width: 300px;
     background-color: #fff;
     padding: 20px;
@@ -34,24 +34,24 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
-  .form-group {
+  .login-form-group {
     margin-bottom: 15px;
   }
   
-  label {
+.login-label {
     display: block;
     margin-bottom: 5px;
     color: #555;
   }
   
-  input {
+.login-input {
     width: 100%;
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
   
-  button {
+.login-button {
     width: 100%;
     padding: 10px;
     background-color: #4caf50;
@@ -62,17 +62,13 @@
     font-size: 1em;
   }
   
-  button:hover {
+.login-button:hover {
     background-color: #45a049;
   }
   
-  .register-form {
-    margin-top: 20px;
-    text-align: center;
-    color: #666;
-  }
+
   
-  a{
+  .register-link{
     color: #3498db;
   }
   
