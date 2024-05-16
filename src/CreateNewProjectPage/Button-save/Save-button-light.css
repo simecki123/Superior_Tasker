@@ -1,5 +1,7 @@
-body {
+.save-button-body {
+    width: 100%;
     background-color: #fff;
+    
 }
 
 .save-all {
@@ -7,6 +9,7 @@ body {
     display: flex;
     justify-content: center; /* Horizontally center */
     align-items: center; /* Vertically center */
+    margin-bottom: 20px;
     
 }
 

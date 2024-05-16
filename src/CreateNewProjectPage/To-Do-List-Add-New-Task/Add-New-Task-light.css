@@ -1,17 +1,17 @@
-.toDoList {
+.toDoList-create-new-project {
     background-color: #f2f2f2; /* Light background color */
     color: #333; /* Text color */
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.toDoList h1 {
+.todo-list-createproject-title {
     color: #333;
     font-size: 2em;
     margin-bottom: 20px;
 }
 
-.toDoList input[type="text"] {
+.todo-list-create-project-enter-task-input {
     width: 70%; /* Adjust as needed */
     padding: 10px;
     margin-right: 10px;
@@ -21,7 +21,7 @@
     color: #333; /* Text color */
 }
 
-.toDoList .add-button {
+.add-button-create-new-project {
     width: 100px;
     height: 60px;
     background-color: #4caf50; /* Green button color */
@@ -32,16 +32,16 @@
     cursor: pointer;
 }
 
-.toDoList .add-button:hover {
+.add-button-create-new-project:hover  {
     background-color: #45a049; /* Darker green color on hover */
 }
 
-.toDoList ol {
+.todo-list-create-project-unordered-list {
     list-style-type: none;
     padding: 0;
 }
 
-.toDoList li {
+.todo-list-create-project-list{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,12 +52,14 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.toDoList .text {
+.text-create-new-project-task-title  {
     width: 70%; /* Adjust as needed */
 }
 
-.toDoList .delete-button,
-.toDoList .move-button {
+.text-create-new-project-task-delete-button,
+.text-create-new-project-task-move-button {
+    width: 70px;
+    height: 60px;
     background-color: #4caf50; /* Green button color */
     color: #fff; /* Text color */
     border: none;
@@ -66,7 +68,7 @@
     cursor: pointer;
 }
 
-.toDoList .delete-button:hover,
-.toDoList .move-button:hover {
+.text-create-new-project-task-delete-button:hover,
+.text-create-new-project-task-move-button:hover  {
     background-color: #45a049; /* Darker green color on hover */
 }

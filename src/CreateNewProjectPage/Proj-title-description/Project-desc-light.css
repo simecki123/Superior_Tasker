@@ -5,19 +5,20 @@
     padding: 20px;
 }
 
-h2{
+.project-title,
+.project-description {
     color: #333;
     font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input{
+.project-name-input {
     color: #333;
     background-color: #c8c8c8;
     width: 150px;
 }
 
-textarea{
+.project-description-name-input{
     color: #333;
     background-color: #c8c8c8;
     max-width: 700px;

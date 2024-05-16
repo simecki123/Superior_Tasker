@@ -46,27 +46,28 @@ function AddNewTaskScreen({ projectlist, setprojectlist }) {
 
     return (
         <>
-            <div className='toDoList'>
-                <h1>To-Do_List</h1>
+            <div className='toDoList-create-new-project'>
+                <h1 className='todo-list-createproject-title'>To-Do_List</h1>
 
                 <div>
                     <input 
+                        className='todo-list-create-project-enter-task-input'
                         type='text' 
                         placeholder='Enter a task ...' 
                         value={newTaskTitle} 
                         onChange={(e) => setNewTaskTitle(e.target.value)} 
                     />
-                    <button className='add-button' onClick={handleAddTask}>Add Task</button>
+                    <button className='add-button-create-new-project' onClick={handleAddTask}>Add Task</button>
                 </div>
                 <hr />
 
-                <ol>
+                <ol className='todo-list-create-project-unordered-list'>
                     {newprojectlist.map(task => (
-                        <li key={task.id}>
-                            <span className='text'>{task.title}</span>
-                            <button className='delete-button' onClick={() => handleDeleteTask(task.id)}>Delete</button>
-                            <button className='move-button' onClick={() => handleMoveTaskUp(task.id)}>☝</button>
-                            <button className='move-button' onClick={() => handleMoveTaskDown(task.id)}>👇</button>
+                        <li  className='todo-list-create-project-list' key={task.id}>
+                            <span className='text-create-new-project-task-title'>{task.title}</span>
+                            <button className='text-create-new-project-task-delete-button' onClick={() => handleDeleteTask(task.id)}>Delete</button>
+                            <button className='text-create-new-project-task-move-button' onClick={() => handleMoveTaskUp(task.id)}>☝</button>
+                            <button className='text-create-new-project-task-move-button' onClick={() => handleMoveTaskDown(task.id)}>👇</button>
                         </li>
                     ))}
                 </ol>

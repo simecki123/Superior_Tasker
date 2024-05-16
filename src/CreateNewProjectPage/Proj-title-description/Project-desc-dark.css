@@ -5,22 +5,32 @@
     padding: 20px;
 }
 
-h2{
+.project-title,
+.project-description {
     color: #fff;
     font-size: 1.4rem;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-input{
+.project-name-input {
     color: #fff;
     background-color: #505050;
-    width: 150px;
+    width: 300px; 
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444; /* Darker input background color */
+    color: #fff; /* Text color */
 }
 
-textarea{
+.project-description-name-input{
     color: #fff;
     background-color: #505050;
-    max-width: 700px;
-    max-height: 600px;
+    width: 300px; 
+    height: 300px;
+    border: none;
+    border-radius: 5px;
+    background-color: #444; /* Darker input background color */
+    color: #fff; /* Text color */
     resize: none;
 }
