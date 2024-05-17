@@ -8,16 +8,16 @@
     padding: 10px; /* Add some padding for spacing */
 }
 
-.left-section {
+.tool-bar-left-section {
     display: flex;
     align-items: center;
 }
 
-.dropdown {
+.tool-bar-dropdown {
     position: relative;
   }
   
-  .dropdown-content {
+  .tool-bar-dropdown-content {
     display: none;
     position: absolute;
     background-color: #fff;
@@ -25,11 +25,11 @@
     z-index: 1;
   }
   
-  .dropdown:hover .dropdown-content {
+  .tool-bar-dropdown:hover .tool-bar-dropdown-content {
     display: block;
   }
   
-  .dropdown-content span {
+  .tool-bar-span {
     width: 100px;
     height: 50px;
     display: block;
@@ -39,7 +39,7 @@
     cursor: pointer;
   }
 
-  span:hover{
+  .tool-bar-span:hover{
     background-color: #d3d0d0;
   }
 
@@ -60,12 +60,12 @@
     background-color: #eee; 
 }
 
-.container {
+.hamburger-container {
     display: flex;
     flex-direction: column;
 }
 
-.bar {
+.hamburger-bar {
     width: 25px;
     height: 5px;
     background-color: #333;
@@ -73,7 +73,7 @@
     transition: 0.4s;
 }
 
-.small-logo {
+.tool-bar-small-logo {
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -81,13 +81,13 @@
     justify-content: center;
 }
 
-.Ime-Prezime {
+.tool-bar-name-surname  {
     font-size: 1.5em;
     color: black;
     margin: 0; /* Remove default margin for h1 */
 }
 
-.right-section {
+.tool-bar-right-section {
     display: flex;
     align-items: center;
 }

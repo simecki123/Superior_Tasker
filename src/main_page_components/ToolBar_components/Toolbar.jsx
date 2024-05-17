@@ -13,42 +13,42 @@ function ToolBarComponent_MainPage({ user }) {
   return (
     <>
       <div className='toolbar'>
-        <div className="left-section">
-          <div className='dropdown'>
+        <div className="tool-bar-left-section">
+          <div className='tool-bar-dropdown'>
             <button className='hamburger-btn'>
-              <div className="container">
-                <div className="bar"></div>
-                <div className="bar"></div>
-                <div className="bar"></div>
+              <div className="hamburger-container">
+                <div className="hamburger-bar"></div>
+                <div className="hamburger-bar"></div>
+                <div className="hamburger-bar"></div>
               </div>
             </button>
-            <div className='dropdown-content'>
+            <div className='tool-bar-dropdown-content'>
               <Link to={"/"}>
-                <span >
+                <span className='tool-bar-span' >
                   Log out
                 </span>
               </Link>
             </div>
           </div>
-          <img src={user.img} alt='LOGO' className='small-logo' />
-          <h1 className='Ime-Prezime'>{user.firstName + " " + user.lastName}</h1>
+          <img src={user.img} alt='LOGO' className='tool-bar-small-logo' />
+          <h1 className='tool-bar-name-surname'>{user.firstName + " " + user.lastName}</h1>
         </div>
 
-        <div className="right-section">
+        <div className="tool-bar-right-section">
           <div className='dropdown'>
             <button className='settings-btn'>
               ⚙️
             </button>
             <div className='dropdown-content'>
-              <span >
+              <span className='tool-bar-span'>
                 Light
               </span>
-              <span >
+              <span className='tool-bar-span'>
                 Dark
               </span>
             </div>
           </div>
-          <img src={logo} alt='LOGO' className='small-logo' />
+          <img src={logo} alt='LOGO' className='tool-bar-small-logo' />
         </div>
       </div>
       <hr></hr>

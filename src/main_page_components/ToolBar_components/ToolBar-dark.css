@@ -6,16 +6,16 @@
     padding: 10px;
 }
 
-.left-section {
+.tool-bar-left-section {
     display: flex;
     align-items: center;
 }
 
-.dropdown {
+.tool-bar-dropdown {
     position: relative;
   }
   
-  .dropdown-content {
+  .tool-bar-dropdown-content {
     display: none;
     position: absolute;
     background-color: #333;
@@ -23,13 +23,13 @@
     z-index: 1;
   }
   
-  .dropdown:hover .dropdown-content {
+  .tool-bar-dropdown:hover .tool-bar-dropdown-content {
     display: block;
   }
   
-  .dropdown-content span {
+  .tool-bar-span {
     width: 100px !important;
-    height: 200px;
+    height: 50px;
     display: block;
     padding: 8px;
     color: #fff;
@@ -38,7 +38,7 @@
   }
 
 
-  span:hover{
+  .tool-bar-span:hover{
     background-color: #626262;
     
   }
@@ -60,12 +60,12 @@
     background-color: #555; /* Darker color on hover */
 }
 
-.container {
+.hamburger-container {
     display: flex;
     flex-direction: column;
 }
 
-.bar {
+.hamburger-bar {
     width: 25px;
     height: 5px;
     background-color: #fff; /* White color for the bars */
@@ -73,20 +73,20 @@
     transition: 0.4s;
 }
 
-.small-logo {
+.tool-bar-small-logo {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.Ime-Prezime {
+.tool-bar-name-surname {
     font-size: 1.5em;
     color: #fff; /* White color for the text */
     margin: 0;
 }
 
-.right-section {
+.tool-bar-right-section {
     display: flex;
     align-items: center;
 }
