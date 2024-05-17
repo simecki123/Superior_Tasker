@@ -5,28 +5,28 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.big-logo {
+.profile-component-big-logo {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.big-Name-surname {
+.profile-component-big-name-surname {
     font-size: 1.5em;
     color: #333; /* Dark text color */
 }
 
-.profile-description {
+.profile-component-profile-description {
     font-size: 1.2em;
     color: #555; /* Slightly darker text color */
 }
 
-p {
+.profile-component-description-text {
     color: #666; /* Darker text color */
 }
 
-button {
+.profile-component-edit-button {
     background-color: #4caf50; /* Green button color */
     color: #fff; /* White text color */
     border: none;
@@ -36,7 +36,7 @@ button {
     font-size: 1em;
 }
 
-button:hover {
+.profile-component-edit-button:hover {
     background-color: #45a049; /* Darker green color on hover */
 }
 
