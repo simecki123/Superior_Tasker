@@ -1,33 +1,34 @@
-body {
+.project-part-container {
+    height: 95%;
     font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
+    background-color: #333;
     color: #fff;
     margin: 0;
   }
   
 
   
-  .topnav {
+  .project-part-topnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
     background-color: #333;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    
   }
   
-  .search-container {
+  .project-part-search-container {
     flex-grow: 1;
     margin-right: 10px;
   }
   
-  .searchForm {
+  .project-part-search-form {
     display: flex;
     align-items: center;
     background-color: #333;
   }
   
-  .search-bar {
+  .project-part-search-bar {
     width: 100%;
     background-color: #333;
     color: #fff;
@@ -38,14 +39,15 @@ body {
     box-sizing: border-box;
   }
   
-  .submit-button {
+  .project-part-submit-button {
     font-size: 1.4rem;
     background-color: #2196f3;
+    border-radius: 10px;
     width: 60px;
     height: 50px;
   }
   
-  .submit-button:hover {
+  .project-part-submit-button:hover {
     background-color: #0b6ab7;
   }
   
@@ -65,7 +67,7 @@ body {
     display: block;
   }
   
-  .dropdown-content span {
+  .dropdown-content-project-part-span {
     width: 200px;
     height: 50px;
     display: block;
@@ -74,15 +76,21 @@ body {
     text-decoration: none;
     cursor: pointer;
   }
+
+  .dropdown-content-project-part-span:hover {
+    background-color: #626262;
+  }
   
-  .dropdown-btn {
+  .project-part-dropdown-btn {
+    color: #fff;
+    border-radius: 10px;
     width: 200px;
     height: 50px;
     background-color: #2196f3;
     margin-right: 50px;
   }
   
-  .dropdown-btn:hover {
+  .project-part-dropdown-btn:hover {
     background-color: #0b6ab7;
   }
 
@@ -91,7 +99,7 @@ body {
   }
   
   
-  .create-new-project {
+  .project-part-create-new-project-btn {
     background-color: #2196f3;
     width: 200px;
     height: 50px;
@@ -102,21 +110,21 @@ body {
     border-radius: 4px;
   }
   
-  .create-new-project:hover {
+  .project-part-create-new-project-btn:hover {
     background-color: #0b6ab7;
   }
   
-  hr {
+  .project-part-break {
     border: 1px solid #555;
     margin: 10px 0;
   }
   
-  ol {
+  .project-part-unordered-list {
     list-style-type: none;
     padding: 0;
   }
   
-  li {
+  .project-part-list {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -127,16 +135,18 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .delete-button,
-  .move-button {
+  .project-part-delete-button,
+  .project-part-move-button {
+    color: #fff;
+    border-radius: 10px;
     height: 50px;
     width: 100px;
     background-color: #2196f3;
     margin-right: 10px;
   }
   
-  .delete-button:hover,
-  .move-button:hover {
+  .project-part-delete-button:hover,
+  .project-part-move-button:hover {
     background-color: #0b6ab7;
   }
   

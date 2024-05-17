@@ -51,7 +51,7 @@ function ToolBarComponent_MainPage({ user }) {
           <img src={logo} alt='LOGO' className='tool-bar-small-logo' />
         </div>
       </div>
-      <hr></hr>
+      <hr className='toolbar-break'></hr>
     </>
   );
 }

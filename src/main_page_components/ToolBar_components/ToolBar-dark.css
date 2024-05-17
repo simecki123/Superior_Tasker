@@ -116,5 +116,10 @@
     border-radius: 50%;
 }
 
+.toolbar-break {
+    border: 1px solid #555;
+    margin: 10px 0;
+}
+
 
 

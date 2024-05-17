@@ -63,50 +63,50 @@ function ListOfProjectsScreen({ projectlist, setProjectList }) {
   };
 
   return (
-    <div className='project-part'>
-      <div className="topnav">
-        <div className="search-container">
-          <form className='searchForm' onSubmit={handleSearch}>
-            <input className='search-bar' type="text" placeholder="Search.." name="search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
-            <button className='submit-button' type="submit">
-              <i className="fa fa-search">🔍</i>
+    <div className='project-part-container'>
+      <div className="project-part-topnav">
+        <div className="project-part-search-container">
+          <form className="project-part-search-form" onSubmit={handleSearch}>
+            <input className="project-part-search-bar" type="text" placeholder="Search.." name="search" value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)} />
+            <button className="project-part-submit-button" type="submit">
+              <i className="fa-fa-search">🔍</i>
             </button>
           </form>
         </div>
 
         <div className="dropdown">
-          <button className="dropdown-btn">
+          <button className="project-part-dropdown-btn">
             Search By <i className="fa fa-caret-down"></i>
           </button>
           <div className="dropdown-content">
-            <span onClick={sortAlphabetically}>
+            <span className='dropdown-content-project-part-span' onClick={sortAlphabetically}>
               Alphabetical
             </span>
-            <span onClick={sortByDate}>Date</span>
-            <span onClick={sortByCompletion}>
+            <span className='dropdown-content-project-part-span' onClick={sortByDate}>Date</span>
+            <span className='dropdown-content-project-part-span' onClick={sortByCompletion}>
               Completion
             </span>
           </div>
         </div>
 
         <Link to={"/newproject"}>
-          <button className="create-new-project">New Project</button>
+          <button className="project-part-create-new-project-btn">New Project</button>
         </Link>
       </div>
-      <hr />
+      <hr className='project-part-break' />
 
       <div>
-        <ol>
+        <ol className='project-part-unordered-list'>
           {projectlist.map(project => (
-            <li key={project.id}>
+            <li className='project-part-list' key={project.id}>
               <Link to={"/projectdetails"}>
-                <span className="text">{project.title}</span>
-                <span className='completion'>{project.completion}</span>
+                <span className="project-part-text">{project.title}</span>
+                <span className='project-part-completion'>{project.completion}</span>
               </Link>
               <div>
-                <button className="delete-button" onClick={() => deleteProject(project.id)}>Delete</button>
-                <button className="move-button" onClick={() => moveProjectUp(project.id)}>☝</button>
-                <button className="move-button" onClick={() => moveProjectDown(project.id)}>👇</button>
+                <button className="project-part-delete-button" onClick={() => deleteProject(project.id)}>Delete</button>
+                <button className="project-part-move-button" onClick={() => moveProjectUp(project.id)}>☝</button>
+                <button className="project-part-move-button" onClick={() => moveProjectDown(project.id)}>👇</button>
               </div>
             </li>
           ))}
