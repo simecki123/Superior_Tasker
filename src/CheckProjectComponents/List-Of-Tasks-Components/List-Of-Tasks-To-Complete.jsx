@@ -4,22 +4,22 @@ import PropTypes from 'prop-types';
 function ListOfTasksToCompleteScreen({ tasklist, setTasklist, moveTaskUp, moveTaskDown, deleteTask, toggleTaskDone }) {
     return (
         <>
-            <div className='toDoList'>
-                <h1>To-Do_List</h1>
+            <div className='toDoList-list-of-tasks'>
+                <h1 className='todo-list-title'>To-Do_List</h1>
                 <hr></hr>
-                <ol>
+                <ol className='unordered-list-todo-list-of-tasks'>
                     {tasklist.map(task => (
-                        <li key={task.id}>
+                        <li className='list-todo-list-of-tasks' key={task.id}>
                             <input 
                                 type='checkbox' 
-                                className='checkbox' 
+                                className='todo-list-checkbox' 
                                 value={task.done} 
                                 onChange={() => toggleTaskDone(task.id)} // Call toggleTaskDone on change
                             />
-                            <span className='text'>{task.name}</span>
-                            <button className='delete-button' onClick={() => deleteTask(task.id)}>Delete</button>
-                            <button className='move-button' onClick={() => moveTaskUp(task.id)}>☝</button>
-                            <button className='move-button' onClick={() => moveTaskDown(task.id)}>👇</button>
+                            <span className='todo-list-text'>{task.name}</span>
+                            <button className='todo-list-delete-button' onClick={() => deleteTask(task.id)}>Delete</button>
+                            <button className='todo-list-move-button' onClick={() => moveTaskUp(task.id)}>☝</button>
+                            <button className='todo-list-move-button' onClick={() => moveTaskDown(task.id)}>👇</button>
                         </li>
                     ))}
                 </ol>

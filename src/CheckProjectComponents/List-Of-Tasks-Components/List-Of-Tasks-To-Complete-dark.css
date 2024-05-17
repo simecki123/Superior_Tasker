@@ -1,24 +1,23 @@
-.toDoList {
-    
+.toDoList-list-of-tasks {
     background-color: #333; /* Dark background color */
     color: #fff; /* Text color */
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  .toDoList h1 {
+  .todo-list-title {
     color: #fff;
     font-size: 2em;
     margin-bottom: 20px;
   }
 
   
-  .toDoList ol {
+  .unordered-list-todo-list-of-tasks {
     list-style-type: none;
     padding: 0;
   }
   
-  .toDoList li {
+  .list-todo-list-of-tasks {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,17 +27,17 @@
     border-radius: 5px;
   }
   
-  .toDoList .text {
+  .todo-list-text {
     width: 70%; /* Adjust as needed */
   }
 
-  .checkbox{
+  .todo-list-checkbox{
     height: 30px;
-    width: 40px;
+    width: 40px; 
   }
   
-  .toDoList .delete-button,
-  .toDoList .move-button {
+  .to-do-list-delete-button,
+  .to-do-List-move-button {
     background-color: #53a7df; /* Red button color */
     color: #fff; /* Text color */
     border: none;
@@ -47,8 +46,8 @@
     cursor: pointer;
   }
   
-  .toDoList .delete-button:hover,
-  .toDoList .move-button:hover {
+  .to-do-list-delete-button:hover,
+  .to-do-List-move-button:hover {
     background-color: #3535ec; /* Darker red color on hover */
   }
   

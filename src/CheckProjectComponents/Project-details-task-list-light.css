@@ -1,7 +1,6 @@
-body{
-    background-color: #fff;
-}
+
 .project-details-list-of-tasks {
+    width: 100%;
     background-color: #fff; /* Light background color */
     color: #333; /* Text color */
     height: 100vh; /* Full viewport height */
