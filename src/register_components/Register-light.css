@@ -69,6 +69,13 @@
 .register-btn:hover {
     background-color: #45a049; /* Dark green color on hover */
   }
+
+  @media screen and (max-width: 600px) {
+    .register-form {
+      width: 90%;
+      max-width: 300px;
+    }
+  }
   
   
 

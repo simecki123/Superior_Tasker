@@ -15,6 +15,7 @@
 
 .save-btn {
     background-color: #40ec5a;
+    border-radius: 10px;
     color: #333f;
     height: 60px;
     width: 200px;

@@ -1,35 +1,45 @@
+/* Adjustments for NewProjectComponent */
+
+/* Common styles for both large and small screens */
 .main-page {
     display: flex;
     flex-direction: column;
     height: 100vh; /* Set height of main page to full viewport height */
     background-color: #333; /* Dark background color */
-}
-
-.tool-bar {
+  }
+  
+  .tool-bar {
     flex: none; /* Ensure tool bar doesn't grow or shrink */
-}
-
-.main-part {
+  }
+  
+  .main-part {
     display: flex;
     flex: 1; /* Grow main part to take remaining space */
-}
-
-.project-desc {
+  }
+  
+  .project-desc {
     width: 25%; /* Set width to 25% of the screen */
     height: 100%; /* Take full height of the main-part container */
     overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
     padding: 20px; /* Add padding */
-    
-}
-
-.add-new-task {
-    flex: 1; /* Take remaining space */
+  }
+  
+  .add-new-task {
+    width: 75%; /* Set width to 75% of the screen */
     height: 100%; /* Take full height of the main-part container */
-    padding-left: 20px; /* Add spacing between project description and add new task */
-    overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
-    
-}
-
-.bottom-bar {
+    padding: 20px; /* Add spacing between project description and add new task */
+  }
+  
+  .bottom-bar {
     flex: none; /* Ensure bottom bar doesn't grow or shrink */
-}
+    padding: 20px; /* Add padding */
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media screen and (max-width: 600px) {
+    .tool-bar, .bottom-bar, .main-page, .main-part, .project-desc, .add-new-task {
+      width: auto; /* Let them take the full width */
+      margin-right: 0; /* Remove margin */
+    }
+  }
+  

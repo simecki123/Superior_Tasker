@@ -71,4 +71,17 @@
   .register-link{
     color: #3498db;
   }
+
+  /* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .login-form {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .register-link {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
   

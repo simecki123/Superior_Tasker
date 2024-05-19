@@ -82,6 +82,7 @@
     background-color: #626262;
   }
   
+  
   .project-part-dropdown-btn {
     color: #fff;
     border-radius: 10px;
@@ -99,14 +100,12 @@
   
   
   .project-part-create-new-project-btn {
-    background-color: #2196f3;
+    color: #fff;
+    border-radius: 10px;
     width: 200px;
     height: 50px;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 4px;
+    background-color: #2196f3;
+    margin-right: 50px;
   }
   
   .project-part-create-new-project-btn:hover {
