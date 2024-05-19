@@ -54,7 +54,7 @@
     
 }
 
-.register-button {
+.register-btn { 
     width: 100%;
     padding: 10px;
     background-color: #3498db;
@@ -65,7 +65,7 @@
     font-size: 1em;
   }
   
-.register-button:hover {
+.register-btn:hover {
     background-color: #2980b9;
   }
 

@@ -53,7 +53,7 @@
     
 }
 
-.register-button {
+.register-btn {
     width: 100%;
     padding: 10px;
     background-color: #4caf50;
@@ -66,7 +66,7 @@
   
   }
   
-.register-button:hover {
+.register-btn:hover {
     background-color: #45a049; /* Dark green color on hover */
   }
   
