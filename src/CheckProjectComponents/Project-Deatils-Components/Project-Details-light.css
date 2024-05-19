@@ -20,6 +20,7 @@
 
 .edit-project-btn{
     background-color: #41e96e;
+    border-radius: 10px;
     color: #333;
     height: 60px;
     width: 150px;

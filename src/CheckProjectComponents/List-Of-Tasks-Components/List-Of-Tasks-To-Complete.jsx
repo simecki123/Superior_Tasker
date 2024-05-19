@@ -11,7 +11,7 @@ function ListOfTasksToCompleteScreen({ tasklist, setTasklist, moveTaskUp, moveTa
                     {tasklist.map(task => (
                         <li className='list-todo-list-of-tasks' key={task.id}>
                             <input 
-                                type='checkbox' 
+                                type='checkbox'  
                                 className='todo-list-checkbox' 
                                 value={task.done} 
                                 onChange={() => toggleTaskDone(task.id)} // Call toggleTaskDone on change
