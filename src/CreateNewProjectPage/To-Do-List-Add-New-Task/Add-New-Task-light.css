@@ -1,4 +1,6 @@
 .toDoList-create-new-project {
+    height: 500px;
+    overflow-y: auto;
     background-color: #f2f2f2; /* Light background color */
     color: #333; /* Text color */
     padding: 20px;

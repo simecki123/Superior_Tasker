@@ -28,6 +28,11 @@ function ToolBarComponent_MainPage({ user }) {
                   Log out
                 </span>
               </Link>
+              <Link to={"/mainpage"}>
+                <span className='tool-bar-span' >
+                  Home
+                </span>
+              </Link>
             </div>
           </div>
           <img src={user.img} alt='LOGO' className='tool-bar-small-logo' />

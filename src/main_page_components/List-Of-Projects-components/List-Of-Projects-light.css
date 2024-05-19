@@ -1,5 +1,6 @@
 .project-part-container {
-  height: 95%;
+  height: 500px;
+  overflow-y: auto;
   font-family: Arial, sans-serif;
   background-color: #fff;
   color: #333;
@@ -91,9 +92,7 @@
   background-color: #18631b;
 }
 
-span:hover{
-  background-color: #ccc;
-}
+
 
 .project-part-create-new-project-btn {
   background-color: #4caf50;

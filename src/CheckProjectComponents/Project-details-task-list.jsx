@@ -4,8 +4,20 @@ import CompletionBarScreen from "./CompletionComponents/CompletionBar-Screen";
 import ProjectDetailsScreen from "./Project-Deatils-Components/Project-Details_component";
 import ListOfTasksToCompleteScreen from "./List-Of-Tasks-Components/List-Of-Tasks-To-Complete";
 import './Project-details-task-list-dark.css';
+import profilePic from '../assets/logo.png';
 
 function ProjectDetailsTaskListScreen() {
+
+    const user = {
+        "id": "1",
+        "firstName": "Sime",
+        "lastName": "Roncevic",
+        "email": "sroncevic19@gmail.com",
+        "password": "KKZadar1945",
+        "img": profilePic,
+        "description": "Basic user"
+      };
+
     const [projectlist, setProjectList] = useState([
         {"id": "1","userId": "1", "title": "Go to school", "description": "Go to school dude!", "date": "01-04-2024", "completion": "0%"},
     ]);
@@ -53,10 +65,13 @@ function ProjectDetailsTaskListScreen() {
 
     return (
         <>
+            
+            
             <div className="project-details-list-of-tasks">
-                <div className='tool-bar'>
-                    <ToolBarComponent_MainPage />
+                <div className="tool-bar">
+                    <ToolBarComponent_MainPage user={user} />
                 </div>
+                
                 <div className='main-part'>
                     <div className='project-desc'>
                         <ProjectDetailsScreen projectlist={projectlist} setProjectList={setProjectList} />

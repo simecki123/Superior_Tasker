@@ -1,5 +1,6 @@
 .toDoList-list-of-tasks {
-    
+  height: 500px;
+  overflow-y: auto;
     background-color: #fff; /* Dark background color */
     color: #333; /* Text color */
     padding: 20px;

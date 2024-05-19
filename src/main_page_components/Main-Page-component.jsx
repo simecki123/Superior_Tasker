@@ -23,7 +23,13 @@ function MainPageScreen() {
     {"id": "1","userId": "1", "title": "Go to school", "description": "Go to school dude!", "date": "01-04-2024", "completion": "0%"},
     {"id": "2","userId": "1", "title": "Do your homework", "description": "Homework nooo!", "date": "04-04-2024", "completion": "20%"},
     {"id": "3","userId": "1", "title": "Excercise", "description": "Gym yea buddy", "date": "02-04-2024", "completion": "50%"},
-    {"id": "4","userId": "1", "title": "Clean room", "description": "Clean your room dude", "date": "03-04-2024", "completion": "80%"}
+    {"id": "4","userId": "1", "title": "Clean room", "description": "Clean your room dude", "date": "03-04-2024", "completion": "80%"},
+    {"id": "5","userId": "1", "title": "Go to school", "description": "Go to school dude!", "date": "01-04-2024", "completion": "0%"},
+    {"id": "6","userId": "1", "title": "Do your homework", "description": "Homework nooo!", "date": "04-04-2024", "completion": "20%"},
+    {"id": "7","userId": "1", "title": "Excercise", "description": "Gym yea buddy", "date": "02-04-2024", "completion": "50%"},
+    {"id": "8","userId": "1", "title": "Go to school", "description": "Go to school dude!", "date": "01-04-2024", "completion": "0%"},
+    {"id": "9","userId": "1", "title": "Do your homework", "description": "Homework nooo!", "date": "04-04-2024", "completion": "20%"},
+    {"id": "10","userId": "1", "title": "Excercise", "description": "Gym yea buddy", "date": "02-04-2024", "completion": "50%"},
   ]);
 
   return (
